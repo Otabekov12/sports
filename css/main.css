@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden{
+    padding: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox{
+    padding: 30px;
+}
+
+.box__input__tennis:checked + .checkbox__controller{
+    background-image: url(../images/table-tennis.png);
+    background-color: white;
+}
+
+.box__input__basketbol:checked + .checkbox__controller{
+    background-image: url(../images/basketball-ball.png);
+    background-color: white;
+}
+
+.box__input__voleybol:checked + .checkbox__controller{
+    background-image: url(../images/volleyball-ball.png);
+     background-color: white;
+}
+
+.box__input__hokkey:checked + .checkbox__controller{
+ background-image: url(../images/hockey-puck.png);
+ background-color: white;
+ 
+}
+
+.checkbox__controller{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-position: center;
+    background-size: contain;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    
+}
